@@ -4,3 +4,6 @@ https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.ht
 https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html (2 programs)
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html (2 programs)
 https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html (2 programs) 
+
+
+&lt;script&gt;alert(&quot;BitE&quot;)&lt;/script&gt;

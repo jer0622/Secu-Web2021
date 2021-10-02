@@ -4,18 +4,25 @@
       <meta charset="utf-8" />
     </head>
     <body>
-        <h1>Mon super moteur de recherche</h1>
-
-        <?php
-        if(!empty($_GET['keyword']))
-        {
-            echo "Résultat(s) pour le mot-clé : ".$_GET['keyword'];
-        } 
-        ?>
+        <h1>Liste de courses</h1>
 
         <form type="get" action="">
             <input type="text" name="keyword" />
-            <input type="submit" value="Rechercher" />
+            <input type="submit" onClick="test();" value="Ajouter" />
         </form>
+        <br>
+
+        <div id="list">
+            <?php
+            if(!empty($_GET['keyword']))
+            {
+            ?>
+
+            <?php
+                echo "Vous avez ajouté : ".htmlspecialchars($_GET['keyword']);
+            } 
+            ?>
+        </div>
+
     </body>
 </html>

@@ -1,21 +1,33 @@
+<!--IL NOUS FAUT UN TEMPLATE :)-->
+
+
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-      <meta charset="utf-8" />
-    </head>
-    <body>
-        <h1>Mon super moteur de recherche</h1>
+<html>
+<body>
 
-        <?php
-        if(!empty($_GET['keyword']))
-        {
-            echo "Résultat(s) pour le mot-clé : ".$_GET['keyword'];
-        } 
-        ?>
+    
+<script>
+    function getName(){
+        var saisie = document.getElementById("name").value;
+        document.getElementById("nomClient").innerHTML = saisie;
+    }
+</script>
 
-        <form type="get" action="">
-            <input type="text" name="keyword" />
-            <input type="submit" value="Rechercher" />
-        </form>
-    </body>
+<form action="" method="get">
+    <div>
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div>
+      <input type="button" onclick="getName()" value="Send !">
+    </div>
+  </form>
+
+
+    Vous vous appelez : <div id="nomClient"></div>
+
+
+
+
+</body>
 </html>
