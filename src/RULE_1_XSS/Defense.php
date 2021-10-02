@@ -14,8 +14,7 @@
 
         <div id="list">
             <?php
-            if(!empty($_GET['keyword']))
-            {
+            if(!empty($_GET['keyword'])){
                 echo "Vous avez ajouté : ".htmlspecialchars($_GET['keyword']);
             } 
             ?>
