@@ -1,0 +1,27 @@
+<!--IL NOUS FAUT UN TEMPLATE :)-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Exemple</h1>
+<p>Paragraphe Exemple.</p>
+
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+
+<div> 
+    <p>
+        Vous vous appelez : <div id="nomClient"></div>
+    </p>
+</div>
+
+
+<script>
+        var saisie = document.getElementById("name").value;
+        document.getElementById("nomClient").innerHTML = saisie;
+</script>
+
+
+</body>
+</html>
