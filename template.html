@@ -5,22 +5,28 @@
 <html>
 <body>
 
-<h1>Exemple</h1>
-<p>Paragraphe Exemple.</p>
-
-<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-
-<div> 
-    <p>
-        Vous vous appelez : <div id="nomClient"></div>
-    </p>
-</div>
-
-
+    
 <script>
+    function getName(){
         var saisie = document.getElementById("name").value;
         document.getElementById("nomClient").innerHTML = saisie;
+    }
 </script>
+
+<form action="" method="get" onSubmit="getName()">
+    <div>
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div>
+      <input type="submit"  value="Send !">
+    </div>
+  </form>
+
+
+    Vous vous appelez : <div id="nomClient"></div>
+
+
 
 
 </body>
