@@ -28,3 +28,7 @@
                                                         'height: ' +  <?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?> + "px;";
         
         </script>
+        
+    </body>
+</html>
+
