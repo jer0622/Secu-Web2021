@@ -6,4 +6,3 @@ https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sh
 https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html (2 programs) 
 
 
-&lt;script&gt;alert(&quot;BitE&quot;)&lt;/script&gt;

@@ -1,6 +1,9 @@
 <?php
-    $name = $_GET['name'];
-    setcookie("name", $name, time()+30, null, null, false, true);
+    if(!empty($_GET['name'])){
+        $name = $_GET['name'];
+        setcookie("name", $name, time()+30, null, null, false, true);
+    }
+    
 ?>
 
 <!DOCTYPE html>
