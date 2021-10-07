@@ -4,30 +4,27 @@
       <meta charset="utf-8" />
     </head>
     <body>
-        <h1>Liste de courses</h1>
+        <h1>Voici un carré</h1>
+        <p>Choisissez sa taille en pixel</p>
 
-        <script>
-            if(
-            <?php if(!empty($_GET['keyword'])){
-                echo true; 
-            }else {
-                    echo false;
-                }
-            ?>
-            ){
-                
-                x= "<?php echo htmlspecialchars($_GET['keyword']) ?>" ;
-                alert(x);
-            } 
-                
-        </script>
-        
         <form type="get" action="">
-            <input type="text" name="keyword" />
-            <input type="submit"  value="Ajouter" />
+            <input type="text" name="pixel" />
+            <input type="submit" value="Changer" />
         </form>
         <br>
+        <span id="carre"></span>
+        <style>
+            #carre {
+                width  : 50px;
+                height : 50px;
+                position: fixed;
+                background : green;
+            }
+        </style>
 
-       
-    </body>
-</html>
+        <script> 
+        
+            document.querySelector('#carre').style =    'width: ' +  <?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?> + 'px;' +
+                                                        'height: ' +  <?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?> + "px;";
+        
+        </script>
