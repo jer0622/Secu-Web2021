@@ -30,10 +30,6 @@ $messages=file_get_contents($file);
 <h2>All the messages left by guests </h2>
 <div id="show">
 
-<script>
-document.write('<?php echo htmlspecialchars($messages,ENT_NOQUOTES) ?>'); 
-</script>
-
 
 </div>
 </body>
