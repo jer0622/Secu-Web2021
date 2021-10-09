@@ -24,8 +24,8 @@
 
         <script> 
         
-            document.querySelector('#carre').style =    'width: ' +   "<?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?>" +'px;' +
-                                                        'height: ' +   "<?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?>" + 'px;';
+            document.querySelector('#carre').style =    'width: ' +   escape("<?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?>") +'px;' +
+                                                        'height: ' +   escape("<?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?>") + 'px;';
         
         </script>
         
