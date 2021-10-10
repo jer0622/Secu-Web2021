@@ -1,0 +1,17 @@
+{
+  "name": "ossam",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".mongorc.js",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "node-esapi": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
