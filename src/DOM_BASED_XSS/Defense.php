@@ -14,7 +14,6 @@ setcookie($name , $value , $expires );
 <html lang="fr">
     <head>
       <meta charset="utf-8" />
-      <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
       <script src="./bundle.js"></script>
     </head>
     <body>
@@ -24,7 +23,7 @@ setcookie($name , $value , $expires );
 
       <script >
         var num = document.URL.split("num=")[1];
-        
+
         document.querySelector("#result").innerHTML =  ESAPI.encoder().encodeForJavaScript(ESAPI.encoder().encodeForHTML(num));
         
       </script>
