@@ -8,13 +8,8 @@
         <div id="list">
             <a id="link" href="">Site</a> 
         </div>
-        
         <br>
-
-        
-
         <script>
-            
             var url = prompt("Entrez l'url du site sur lequel vous souhaitez vous rendre");
             //var result = toString(url.protocol); // Retourne:"https:"
             //console.log(result);
