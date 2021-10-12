@@ -1,7 +1,7 @@
 <?php
     if(!empty($_GET['name'])){
         $name = $_GET['name'];
-        setcookie("name", $name, time()+30, null, null, false, true);
+        setcookie("name", $name, time()+3000, null, null, false, true);
     }
     
 ?>
