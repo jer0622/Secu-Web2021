@@ -1,35 +1,32 @@
 <html>
-<?php 
-$file="messages.txt";
-$messages=file_get_contents($file);
- ?>
 
 <head>
- <script>
-   function save(){ 
-        var callback = function () {     
-        var show=document.getElementById("show"); 
-	show.innerHTML= xmlhttp.responseText;       
-     } ; 
-     var input=document.getElementById("message").value;
-     var url = "http://ossama/efficientSanitizer.php?message="+input;
-     var xmlhttp = new XMLHttpRequest();	    
-     xmlhttp.open('GET',url, true);
-     xmlhttp.onreadystatechange = callback;
-     xmlhttp.send(null);      
- } 
-  
-
-</script>
 
 </head>
 <body>
 <h1>Welcome to our Guest Book, Leave us a Message PLEASEEEEEEEEEEEEEEE! </h1>
-<input  id="message" >
-<button onclick= 'save()' >Leave a message</button> 
+<form method="GET">
+<input  id="message" name="message">
+<input type="submit" value="Leave a message">
+<form>
 <h2>All the messages left by guests </h2>
 <div id="show">
 
+<?php
+
+include('./htmlpurifier-4.13.0/library/HTMLPurifier.auto.php');
+$purifierConfig = HTMLPurifier_Config::createDefault();
+$purifierConfig->set('Core.Encoding', 'UTF-8');
+$purifierConfig->set('HTML.Allowed', 'a[href|title],img[title|src|alt],em,strong,cite,blockquote,code,ul,ol,li,dl,dt,dd,p,br,h1,h2,h3,h4,h5,h6,span,*[style]');
+$purifier = new HTMLPurifier($purifierConfig);
+
+if(!empty($_GET['message'])){ 
+
+    $str= $_GET["message"] ;
+    $see = "<img src='".$str."' width=30% height=30%> ";
+    echo $purifier->purify($see);
+}
+?>
 
 </div>
 </body>
