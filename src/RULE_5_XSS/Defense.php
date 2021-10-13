@@ -17,10 +17,10 @@
             <?php
                 
                 if(!empty($_GET['pixel'])){ 
-                    $monUrl = "http://secuxss0/template.php?value=".htmlspecialchars($_GET['pixel']); 
+                    $monUrl = $url."?value=".htmlspecialchars($_GET['pixel']); 
                     echo '<a href="'. $monUrl.'">Voir le carré</a>';
                 }else {
-                    $monUrl = "http://secuxss0/template.php?value=";
+                    $monUrl = $url."?value=";
                     echo "<input type='submit' value='Valider la taille' />"; 
                 }
                 $pixel = 0;
