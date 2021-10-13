@@ -1,0 +1,17 @@
+{
+  "name": "rule_3-1_xss",
+  "version": "1.0.0",
+  "description": "package de ma rule 3.1 OWASP ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "XSS"
+  ],
+  "author": "Bananos",
+  "license": "ISC",
+  "dependencies": {
+    "serialize-javascript": "^6.0.0"
+  }
+}

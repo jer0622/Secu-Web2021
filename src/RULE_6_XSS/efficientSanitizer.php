@@ -3,6 +3,7 @@
     $str= $_GET["message"] ;
  
     $str = preg_replace('#\'#','&apos;',$str);    // Change [ ' ] To [ &apos; ]
+    $str = preg_replace('#\"#','&quot;',$str);    // Change [ " ] To [ &quot; ]
     $str = preg_replace('#\\\\#','',$str);   // To remove [ \ ]
     $str = htmlspecialchars($str); // or $str = htmlentities($str);
 
