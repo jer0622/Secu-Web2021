@@ -15,6 +15,7 @@
             <input type="text" name="pixel" />
             
             <?php
+                $url = $_SERVER['PHP_SELF'] ;
                 
                 if(!empty($_GET['pixel'])){ 
                     $monUrl = $url."?value=".htmlspecialchars($_GET['pixel']); 
