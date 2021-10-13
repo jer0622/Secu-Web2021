@@ -11,7 +11,7 @@
 	      show.innerHTML= xmlhttp.responseText;       
      } ; 
      var input=document.getElementById("message").value;
-     var url = <?php echo $_SERVER['PHP_SELF'] ;?>+"?message="+input;
+     var url = "<?php echo $_SERVER['PHP_SELF'] ;?>"+"?message="+input;
      var xmlhttp = new XMLHttpRequest();	    
      xmlhttp.open('GET',url, true);
      xmlhttp.onreadystatechange = callback;
