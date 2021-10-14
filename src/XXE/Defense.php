@@ -14,6 +14,8 @@
         </form><br><br>
 
         <?php
+            error_reporting(E_ERROR | E_PARSE);
+
             if (isset($_POST["submit"]) && !empty($_POST["data"])) {
                 $xmlfile = $_POST["data"];
 
@@ -26,6 +28,10 @@
                 echo 'Vous avez ajouté :<pre>';
                 print_r($contenu);
                 echo '</pre>';
+
+                if ($contenu == "") {
+                    echo "XML non valide";
+                }
             }
         ?>
     </body>
