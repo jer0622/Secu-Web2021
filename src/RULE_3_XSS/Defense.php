@@ -22,8 +22,18 @@
             }
         </style>
 
+            <?php 
+            $taille= "";
+            if(!empty($_GET['pixel'])){ 
+                $taille = htmlspecialchars($_GET['pixel']);
+                $taille = preg_replace('#\'#','&apos;',$taille);    // Change [ ' ] To [ &apos; ]
+                $taille = preg_replace('#\"#','&quot;',$taille);    // Change [ " ] To [ &quot; ]
+                $taille = preg_replace('#\\\\#','',$taille);   // To remove [ \ ]
+                $taille = htmlspecialchars($taille);  
+            }
+            ?>
         <script> 
-            var taille =  "<?php if(!empty($_GET['pixel'])){ echo htmlspecialchars($_GET['pixel']);  }   ?>"
+            var taille =  "<?php echo $taille ?>"
             document.querySelector('#carre').style =    'width: ' + taille  +'px;' +
                                                         'height: ' +   taille + 'px;';
         
