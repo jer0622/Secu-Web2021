@@ -12,6 +12,7 @@
   "author": "Bananos",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^17.0.0",
     "serialize-javascript": "^6.0.0"
   }
 }

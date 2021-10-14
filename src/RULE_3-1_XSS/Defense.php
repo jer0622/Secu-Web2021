@@ -3,6 +3,7 @@
     <head>
       <meta charset="utf-8" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script  src="./bundle.js"></script>
     </head>
     <body>
         
@@ -29,14 +30,13 @@
                 xhr.setRequestHeader("Content-Type", "application/json");
                 xhr.onreadystatechange = function () {
                     if (xhr.readyState === 4 && xhr.status === 200) {
-                        var serialize = require('serialize-javascript');
                         var json = JSON.parse(xhr.responseText);
-                        serialize(json);
                         document.getElementById("article").innerHTML = json.keyword;
                         document.getElementById("nombre").innerHTML = json.value;
                     }
                 };
-                var data = JSON.stringify({"keyword": keyword, "value": value});
+                var data = serialize({"keyword": keyword, "value": value});
+                //data = JSON.stringify(data);
                 xhr.send(data);
             }
                            
