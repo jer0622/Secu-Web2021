@@ -24,9 +24,10 @@
                 var keyword =  document.getElementById("keyword").value;
                 var value = document.getElementById("value").value;
                 var xhr = new XMLHttpRequest();
-                var url = "http://origin1/serv.php" ;
+                var url ="http://origin2:80/serv.php" 
                 xhr.open("POST", url, true);
                 xhr.setRequestHeader('Access-Control-Allow-Origin','*');
+                xhr.setRequestHeader('Access-Control-Allow-Methods','POST, GET'); 
                 xhr.setRequestHeader("Content-Type", "application/json");
                 xhr.onreadystatechange = function () {
                     if (xhr.readyState === 4 && xhr.status === 200) {

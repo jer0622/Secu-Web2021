@@ -1,8 +1,8 @@
-https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html (16/18 programs) 
+https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html (18/18 programs) 
 https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html (2/2 programs)
 https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html (2/6 programs)
 https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html (2/2 programs)
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html (2/2 programs)
-https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html (0/2 programs) 
+https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html (2/2 programs) 
 
 
