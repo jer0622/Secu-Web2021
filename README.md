@@ -9,7 +9,7 @@ Parmi ces règles nous retrouvons notamment :
 
 Au total 32 programmes ont été implémenté dont 16 vulnérable et 16 de défense. Chaque programme vulnérable dispose d’un exploit permettant d’exploiter la vulnérabilité, et d’un programme de défense permettant de contrer celle-ci.
 
-Liens des règle OWASP : <br/>
+Liens des règles OWASP : <br/>
 https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html (18 programs) 
 https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html (2 programs)
 https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html (6 programs)
