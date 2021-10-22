@@ -21,7 +21,7 @@
                 $pwd = $_POST["pwd"];
 
                 // Connection à la BD
-                $mysqli = new mysqli("localhost", "root", "root", "dbTest");
+                $mysqli = new mysqli("localhost", "root", "", "dbTest");
 
                 // Vérification de la connection
                 if ($mysqli -> connect_errno) {
